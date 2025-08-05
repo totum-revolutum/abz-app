@@ -20,5 +20,5 @@ export default defineConfig({
       },
     },
   },
-  base: '/назва-репозиторію/',
+  base: '/abz-app/',
 });
