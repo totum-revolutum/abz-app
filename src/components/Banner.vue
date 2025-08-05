@@ -1,0 +1,76 @@
+<script setup lang="ts">
+import Button from "./Button.vue";
+</script>
+
+<template>
+  <section class="banner">
+    <div class="main-container">
+      <div class="banner__content">
+        <div class="banner__title">Test assignment for front-end developer</div>
+
+        <div class="banner__text">
+          What defines a good front-end developer is one that has skilled
+          knowledge of HTML, CSS, JS with a vast understanding of User design
+          thinking as they'll be building web interfaces with accessibility in
+          mind. They should also be excited to learn, as the world of Front-End
+          Development keeps evolving.
+        </div>
+
+        <a href="#form">
+          <Button text="Sign up" width="100px" type="button" />
+        </a>
+      </div>
+    </div>
+  </section>
+</template>
+
+<style scoped lang="scss">
+.banner {
+  height: 500px;
+  background-image: url("../assets/images/banner-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-bottom: 140px;
+
+  @include onDesktop {
+    height: 650px;
+
+    max-width: 1170px;
+    padding: 0 60px;
+    margin: 0 auto 140px auto;
+  }
+
+  &__content {
+    width: 328px;
+    padding: 40px 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+
+    @include onTablet {
+      padding: 89px 0;
+      width: 380px;
+    }
+
+    @include onDesktop {
+      padding: 164px 0;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 21px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 32px;
+  }
+}
+</style>
